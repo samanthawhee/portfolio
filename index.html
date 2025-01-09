@@ -9,22 +9,23 @@
 		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript">
 		// Initialize EmailJS with your Public Key (User ID)
-	    emailjs.init('pMxSihy3OHx2E_pOC');  // Replace with your Public Key (User ID)
+	    emailjs.init('pMxSihy3OHx2E_pOC');
 
         // Send email on form submission
         function sendEmail(event) {
-            event.preventDefault();  // Prevent the form from submitting normally
+            event.preventDefault();
 
-            emailjs.sendForm('samanthawhee', 'template_hpzo3j2', event.target)  // Service ID and Template ID
+            emailjs.sendForm('samanthawhee', 'template_hpzo3j2', event.target)
                 .then(function(response) {
                     alert('Message sent successfully!');
-					document.getElementById('contact-form').reset();  // Clear the form
+					document.getElementById('contact-form').reset();
                 }, function(error) {
-                    console.error('Error sending email:', error); // Log the error in the console
-                    alert('Failed to send message: ' + error.text); // Display the actual error message from EmailJS
+                    console.error('Error sending email:', error);
+                    alert('Failed to send message: ' + error.text);
                 });
             }
 		</script>
+
 		<!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-H35Z31WW5P"></script>
         <script>
@@ -34,6 +35,7 @@
 
             gtag('config', 'G-H35Z31WW5P');
         </script>
+
 	</head>
 	<body class="is-preload">
 
@@ -164,7 +166,9 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Last Updated : Jan 2025</li>
+								<li>&copy; Untitled. All rights reserved.</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
