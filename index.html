@@ -18,6 +18,7 @@
             emailjs.sendForm('samanthawhee', 'template_hpzo3j2', event.target)  // Service ID and Template ID
                 .then(function(response) {
                     alert('Message sent successfully!');
+					document.getElementById('contact-form').reset();  // Clear the form
                 }, function(error) {
                     console.error('Error sending email:', error); // Log the error in the console
                     alert('Failed to send message: ' + error.text); // Display the actual error message from EmailJS
@@ -46,9 +47,10 @@
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon brands"><i class="fa-brands fa-linkedin"></i><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands"><i class="fa-brands fa-github"></i><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands"><i class="fa-solid fa-envelope"></i><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/samantha-huang-273768146/" class="icon brands"><i class="fa-brands fa-linkedin"></i><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/samanthawhee" class="icon brands"><i class="fa-brands fa-github"></i><span class="label">Github</span></a></li>
+						<li><a href="mailto:samanthahuang1105@gmail.com.tw?subject=Portfolio%20Inquiry&body=Hi%20Samantha%2C%0A%0AI%20would%20like%20to%20connect%20with%20you%20regarding%20your%20portfolio.%20Looking%20forward%20to%20hearing%20from%20you!" class="icon brands"><i class="fa-solid fa-envelope"></i><span class="label">Email</span></a></li>
+
 					</ul>
 				</footer>
 			</section>
